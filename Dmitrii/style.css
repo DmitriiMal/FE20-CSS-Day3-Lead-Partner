@@ -13,9 +13,8 @@ p {
 .container {
   margin: 20px;
   padding: 4px;
-  max-width: 300px;
+  max-width: 350px;
   min-height: 400px;
-  max-height: 600px;
   border: 0.1rem solid #000;
 }
 
@@ -34,13 +33,34 @@ hr {
   border-bottom: 10px #000 solid;
 }
 
+.hr-2 {
+  border-bottom: 6px #000 solid;
+}
+
+
 .hr-3 {
   border-bottom: 2px #000 solid;
+}
+
+.hr-4-margin {
+  border-bottom: 2px #000 solid;
+  margin-left: 15px;
+}
+
+.hr-4-margin-gray {
+  border-bottom: 3px #ccc solid;
+  margin-left: 15px;
 }
 
 .flex-box {
   display: flex;
   justify-content: space-between;
+}
+
+.flex-box-margin {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
 }
 
 .box-right-small {
@@ -51,9 +71,9 @@ hr {
 
 .box-right {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 20px;
+  min-width: 105px;
 }
 
 .smal-bold {
@@ -61,4 +81,39 @@ hr {
   font-size: 0.8rem;
   margin: 0;
   padding: 0;
+}
+
+.footnotes {
+  line-height: 1rem;
+  font-size: 0.8rem;
+}
+
+
+
+/* footer */
+
+.flex-box-four {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.box-left {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  min-width: 170px;
+}
+
+.box-right {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 20px; */
+  min-width: 140px;
+}
+
+.flex-box-three {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
 }
