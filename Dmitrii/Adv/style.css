@@ -20,6 +20,10 @@ body {
   width: 100%;
 }
 
+p {
+  color: var(--text-color);
+}
+
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -79,4 +83,29 @@ a {
   height: 100vh;
   background-color: var(--secondary-color);
   background-image: linear-gradient(var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20%;
+}
+
+.hero>div>h1 {
+  font-size: 8rem;
+  margin-bottom: 60px;
+  color: var(--secondary-color);
+  transform: translateY(-1000px);
+  animation: go-back 0.2s ease-in-out 0.5s forwards;
+}
+
+.hero>div>p {
+  transform: translateX(-1500px);
+  font-size: 1.2rem;
+  animation: go-back 0.2s ease-in-out 1.0s forwards;
+}
+
+@keyframes go-back {
+  to {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
 }
